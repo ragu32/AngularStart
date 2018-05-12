@@ -1,0 +1,13 @@
+<div *ngIf = 'appStatus'>
+  <h1><p style="color:red;">{{appTitle}}</p></h1><p> Do Something </p>
+</div>
+
+<div *ngFor = 'let variable of makeList'>
+  <li>{{variable.Animal}}</li>
+  <li><a href={{variable.url}} style="color:blue;"> view {{variable.Animal}} in Wiki</a></li>
+</div>
+
+<div *ngFor = 'let json of Ijson'>
+  <li>{{json.ProductID}}</li>
+  <li>{{json.ProductName}}</li>
+</div>
