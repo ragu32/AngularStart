@@ -7,6 +7,7 @@ import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'myapp',
+  //template: 'first.component.html',
   templateUrl:'./html/first.component.html',
   providers: [JsonService]
 })
@@ -23,7 +24,7 @@ Ijson: IjsonInterface[];
 }*/
 
  //private _jsonurl='app/Json/newTryJson.json';
- private _jsonurl = '/api/FirstAngular'
+ private _jsonurl = 'http://localhost:3000/api/FirstAngular';
  constructor(private _http: Http){}
 
  getproducts(): Observable<IjsonInterface[]> {
