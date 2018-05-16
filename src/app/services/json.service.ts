@@ -3,7 +3,7 @@ import { Http , Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
-//import { IjsonInterface } from './Interface/IjsonInterface';
+import { IjsonInterface } from '../../app/Interface/IjsonInterface';
 
 @Injectable()
 export class JsonService {
